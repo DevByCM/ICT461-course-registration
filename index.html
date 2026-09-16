@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ICT461 Course Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>ICT461 Course Registration</h1>
+        <p>Web Systems and Technology</p>
+    </header>
+
+    <main>
+        <section class="registration-section" aria-labelledby="registration-title">
+
+            <h2 id="registration-title">Register for ICT461</h2>
+
+            <p>
+                Complete the form below to register for the ICT461 course.
+            </p>
+
+            <form id="registrationForm" novalidate>
+
+                <div class="form-group">
+                    <label for="studentName">Full Name</label>
+                    <input
+                        type="text"
+                        id="studentName"
+                        name="studentName"
+                        autocomplete="name"
+                        required
+                        aria-describedby="nameError"
+                    >
+                    <p id="nameError" class="error-message"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentId">Student ID</label>
+                    <input
+                        type="text"
+                        id="studentId"
+                        name="studentId"
+                        required
+                        aria-describedby="idError"
+                    >
+                    <p id="idError" class="error-message"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">University Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                        aria-describedby="emailError"
+                    >
+                    <p id="emailError" class="error-message"></p>
+                </div>
+
+                <fieldset>
+                    <legend>Study Mode</legend>
+
+                    <label>
+                        <input type="radio" name="studyMode" value="full-time" required>
+                        Full-time
+                    </label>
+
+                    <label>
+                        <input type="radio" name="studyMode" value="distance">
+                        Distance
+                    </label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="semester">Semester</label>
+
+                    <select
+                        id="semester"
+                        name="semester"
+                        required
+                        aria-describedby="semesterError"
+                    >
+                        <option value="">Select semester</option>
+                        <option value="semester-1">Semester 1</option>
+                        <option value="semester-2">Semester 2</option>
+                    </select>
+
+                    <p id="semesterError" class="error-message"></p>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input
+                            type="checkbox"
+                            id="confirmation"
+                            name="confirmation"
+                            required
+                        >
+                        I confirm that the information provided is correct.
+                    </label>
+                </div>
+
+                <button type="submit">Register for ICT461</button>
+
+                <div
+                    id="successMessage"
+                    class="success-message"
+                    role="status"
+                    aria-live="polite"
+                ></div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ICT461 Web Systems and Technology</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

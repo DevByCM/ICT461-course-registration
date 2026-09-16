@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.site-header {
+    background: #17365d;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.registration-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+label,
+legend {
+    font-weight: bold;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.4rem;
+    border: 1px solid #777;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+fieldset {
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+}
+
+fieldset label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: normal;
+}
+
+fieldset input {
+    display: inline-block;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+}
+
+.checkbox-group input {
+    display: inline-block;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline: 3px solid #ffbf47;
+    outline-offset: 2px;
+}
+
+button {
+    width: 100%;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 5px;
+    background: #17365d;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #28558a;
+}
+
+.error-message {
+    color: #b00020;
+    margin: 0.3rem 0 0;
+    font-size: 0.9rem;
+}
+
+.success-message {
+    margin-top: 1rem;
+    color: #176b2c;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .registration-section {
+        padding: 1.25rem;
+    }
+
+    .site-header {
+        padding: 1.5rem 1rem;
+    }
+}
